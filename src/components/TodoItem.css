@@ -1,0 +1,107 @@
+/* Custom CSS for the TodoList component */
+.todo-items-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Custom CSS for the TodoItem component */
+.todo-item {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 10px;
+  background-color: #3a4750;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, background-color 0.3s;
+  flex-wrap: wrap;
+}
+
+.todo-item:hover {
+  transform: scale(1.02);
+  background-color: #4b5861;
+}
+
+.todo-item.completed {
+  background-color: #4ade80;
+}
+
+/* Task details container */
+.task-details {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 8px;
+  color: #e2e8f0;
+  width: 100%;
+}
+
+/* Styling for task inputs */
+.task-input,
+.task-textarea,
+.task-date-input,
+.task-priority-input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background-color: #475569;
+  color: #f1f5f9;
+  font-size: 15px;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.task-input:focus,
+.task-textarea:focus,
+.task-date-input:focus,
+.task-priority-input:focus {
+  background-color: #38bdf8;
+  border: 2px solid #2563eb;
+  outline: none;
+}
+
+/* Edit and delete button styling */
+.edit-btn,
+.delete-btn {
+  background-color: #475569;
+  padding: 10px;
+  border-radius: 10px;
+  color: #f0f4f8;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: auto;
+}
+
+.edit-btn:hover {
+  background-color: #3b82f6;
+  color: #fff;
+}
+
+.delete-btn:hover {
+  background-color: #ef4444;
+  color: #fff;
+}
+
+/* Styling for task text area */
+.task-textarea {
+  resize: vertical;
+  max-height: 200px;
+  min-height: 60px;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background-color: #475569;
+  color: #f1f5f9;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.task-textarea:focus {
+  background-color: #38bdf8;
+  border: 2px solid #2563eb;
+  outline: none;
+}
